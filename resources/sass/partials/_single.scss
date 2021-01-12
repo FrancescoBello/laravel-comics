@@ -1,0 +1,88 @@
+
+
+
+.single-comic{
+  background-color: #007fff;
+  height: 70px;
+
+  .comic-thumb{
+    position: relative;
+    padding: 50px;
+    img{
+    position: absolute;
+    bottom: 70px;
+  }
+}
+}main{
+  height: 600px;
+  .comic-info{
+    background-color: white;
+    height: 600px;
+    .info-buy{
+      width: 800px;
+      background-color: green;
+      height: 50px;
+      .comic-price{
+       color: #bafd9c;
+       display: inline-block;
+        .price{
+          color: white;
+        }
+      }
+    }.comic-description{
+        width: 800px;
+    }img{
+      float: right;
+    }
+  }.comic-details{
+    height: 1000px;
+    background-color: #F6F6F6;
+    padding-bottom: 60px;
+    .talent, .specs{
+      width: 48%;
+        box-sizing: border-box;
+        float: left;
+        h1{
+          color:  #003f5e;
+        }ul{
+
+          margin-right: 20px;
+          list-style-type: none;
+          li{
+            .detail{
+              color: #003f5e;
+            }
+          a{
+            color: #0282F9;
+          }
+          }
+        }
+    }
+  }.comic-icon{
+     background-color: #F6F6F6;
+     .icon-container{
+       border-left: 1px solid #e3e3e3;
+       padding: 10px;
+       float: left;
+       display: inline-block;
+       .icon-image{
+        background-image: url('/images/cta-icons.png');
+        display: inline-block;
+        width: 37px;
+        height: 37px;
+
+       }@for $i from 0 through 3 {
+        &:nth-child(#{$i + 1}){
+          .icon-image {
+          background-position: 37px * $i 0;
+          }
+         &:hover .icon-image {
+          color: blue;
+          }
+        }
+
+     }
+  }
+
+ }
+}

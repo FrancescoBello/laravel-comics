@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.jumbotron {
+  background-image: url("/images/jumbotron.jpg");
+  padding: 250px;
+}
+
+header .header-top {
+  width: 100%;
+  height: 20px;
+  background-color: #007fff;
+}
+
+header .header-top .up {
+  text-transform: uppercase;
+}
+
+header .header-top ul {
+  float: right;
+}
+
+header .header-top ul li {
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 50px;
+}
+
+header .header-top ul li a {
+  color: white;
+}
+
+header .header-bottom {
+  padding: 15px;
+  border-bottom: 0.5px solid #F0F0F0;
+}
+
+header .header-bottom .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-bottom .navbar img {
+  height: 70px;
+}
+
+header .header-bottom .navbar ul li {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+}
+
+header .header-bottom .navbar ul li a {
+  color: #464646;
+  line-height: 100px;
+}
+
+header .header-bottom .navbar ul li a.active,
+header .header-bottom .navbar ul li a:hover {
+  color: #007fff;
+  border-bottom: 3px solid #007fff;
+}
+
+footer .footer-top {
+  height: 400px;
+  background-image: url("/images/footer-bg.jpg");
+}
+
+footer .footer-top .dc-logo {
+  padding: 40px 0;
+  background-image: url("/images/dc-logo-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+footer .footer-top .dc-logo .footer-menu {
+  display: inline-block;
+  padding: 20px;
+}
+
+footer .footer-top .dc-logo .footer-menu h3 {
+  color: white;
+}
+
+footer .footer-top .dc-logo .footer-menu ul {
+  list-style-type: none;
+}
+
+footer .footer-top .dc-logo .footer-menu ul li a {
+  color: #959595;
+}
+
+footer .footer-top .dc-logo .footer-menu ul li a:hover {
+  color: #0282F9;
+}
+
+footer .footer-top .dc-logo .footer-menu2 {
+  display: inline-block;
+  padding: 20px;
+}
+
+footer .footer-top .dc-logo .footer-menu2 h3 {
+  color: white;
+}
+
+footer .footer-top .dc-logo .footer-menu2 ul {
+  list-style-type: none;
+}
+
+footer .footer-top .dc-logo .footer-menu2 ul li a {
+  color: #959595;
+}
+
+footer .footer-top .dc-logo .footer-menu2 ul li a:hover {
+  color: #0282F9;
+}
+
+footer .footer-top .dc-logo p {
+  color: #959595;
+}
+
+footer .footer-top .dc-logo p a {
+  color: #0282F9;
+}
+
+footer .footer-bottom {
+  background-color: #303030;
+  height: 100px;
+}
+
+footer .footer-bottom .footer-left {
+  width: 50%;
+  float: left;
+}
+
+footer .footer-bottom .footer-left button {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  color: white;
+  border: 3px solid #0282F9;
+  background-color: transparent;
+}
+
+footer .footer-bottom .footer-left:hover {
+  background-color: #0282F9;
+}
+
+footer .footer-bottom .footer-right {
+  float: right;
+  width: 50%;
+}
+
+footer .footer-bottom .footer-right h3 {
+  color: #0282F9;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+footer .footer-bottom .footer-right ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+footer .footer-bottom .footer-right ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer .footer-bottom .footer-right ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+footer .footer-bottom .footer-right ul li a:hover {
+  opacity: 0.8;
+}
+
+.comics {
+  background-color: #3f3f3f;
+}
+
+.comics .comic-card {
+  padding: 10px;
+  width: 180px;
+  height: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.comics .comic-card a {
+  color: white;
+}
+
+.comics .comic-card a img {
+  width: 100%;
+  height: 100%;
+}
+
+.single-comic {
+  background-color: #007fff;
+  height: 70px;
+}
+
+.single-comic .comic-thumb {
+  position: relative;
+  padding: 50px;
+}
+
+.single-comic .comic-thumb img {
+  position: absolute;
+  bottom: 70px;
+}
+
+main {
+  height: 600px;
+}
+
+main .comic-info {
+  background-color: white;
+  height: 600px;
+}
+
+main .comic-info .info-buy {
+  width: 800px;
+  background-color: green;
+  height: 50px;
+}
+
+main .comic-info .info-buy .comic-price {
+  color: #bafd9c;
+  display: inline-block;
+}
+
+main .comic-info .info-buy .comic-price .price {
+  color: white;
+}
+
+main .comic-info .comic-description {
+  width: 800px;
+}
+
+main .comic-info img {
+  float: right;
+}
+
+main .comic-details {
+  height: 1000px;
+  background-color: #F6F6F6;
+  padding-bottom: 60px;
+}
+
+main .comic-details .talent,
+main .comic-details .specs {
+  width: 48%;
+  box-sizing: border-box;
+  float: left;
+}
+
+main .comic-details .talent h1,
+main .comic-details .specs h1 {
+  color: #003f5e;
+}
+
+main .comic-details .talent ul,
+main .comic-details .specs ul {
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+main .comic-details .talent ul li .detail,
+main .comic-details .specs ul li .detail {
+  color: #003f5e;
+}
+
+main .comic-details .talent ul li a,
+main .comic-details .specs ul li a {
+  color: #0282F9;
+}
+
+main .comic-icon {
+  background-color: #F6F6F6;
+}
+
+main .comic-icon .icon-container {
+  border-left: 1px solid #e3e3e3;
+  padding: 10px;
+  float: left;
+  display: inline-block;
+}
+
+main .comic-icon .icon-container .icon-image {
+  background-image: url("/images/cta-icons.png");
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+}
+
+main .comic-icon .icon-container:nth-child(1) .icon-image {
+  background-position: 0px 0;
+}
+
+main .comic-icon .icon-container:nth-child(1):hover .icon-image {
+  color: blue;
+}
+
+main .comic-icon .icon-container:nth-child(2) .icon-image {
+  background-position: 37px 0;
+}
+
+main .comic-icon .icon-container:nth-child(2):hover .icon-image {
+  color: blue;
+}
+
+main .comic-icon .icon-container:nth-child(3) .icon-image {
+  background-position: 74px 0;
+}
+
+main .comic-icon .icon-container:nth-child(3):hover .icon-image {
+  color: blue;
+}
+
+main .comic-icon .icon-container:nth-child(4) .icon-image {
+  background-position: 111px 0;
+}
+
+main .comic-icon .icon-container:nth-child(4):hover .icon-image {
+  color: blue;
+}
+
